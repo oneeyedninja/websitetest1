@@ -19,10 +19,10 @@ export default {
   methods: {
     deleteProduct(product) {
       this.$emit('deleted', product);
-      captains.log(`You tried to delete ${product.name}`);
+      captains.log('You tried to delete ${product.name}');
     },
     selectProduct(product) {
-      captains.log(`You tried to select ${product.name}`);
+      captains.log('You tried to select ${product.name}');
       this.$emit('selected', product);
     },
   },
